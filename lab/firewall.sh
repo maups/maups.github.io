@@ -18,6 +18,8 @@ then
 	iptables -P INPUT DROP
 	iptables -P OUTPUT DROP
 
+	ls /dev/sd* > /root/pattern.txt
+
 	rm /tmp/tmp.txt
 
 	while (( 1 ))

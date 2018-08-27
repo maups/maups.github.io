@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="MATA80 - Laboratório de Programação II">
+	<meta name="author" content="Maurício Pamplona Segundo">
+	<title>MATA80 - Laboratório de Programação II</title>
+
+<style type="text/css">
+td {
+  vertical-align: top;
+}
+</style>
+
+</head>
+<body>
+
+<h2>MATA80 - Laboratório de Programação II (2018.2)</h2>
+<p>Maurício Pamplona Segundo e Rafael Augusto Melo</p>
+
+<h3>Aula 1. Mochila, Moeda e afins</h3>
+<p>Links úteis: <a href="https://en.wikipedia.org/wiki/Knapsack_problem" target=_blank>[LINK #1]</a> <a href="https://en.wikipedia.org/wiki/Change-making_problem" target=_blank>[LINK #2]</a> <a href="https://en.wikipedia.org/wiki/Coin_problem" target=_blank>[LINK #3]</a></p>
+<p>Lista de exercícios: <a href="https://moj.naquadah.com.br/cgi-bin/contest.sh/mata80-ufba-20182-l1" target=_blank>[LINK]</a></p>
+
+</body>
+</html>

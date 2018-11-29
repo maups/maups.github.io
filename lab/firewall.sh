@@ -1,6 +1,6 @@
 #!/bin/bash
 
-lab=144
+lab=143
 
 wget http://maups.github.io/lab/$lab.txt -O /tmp/tmp.txt
 while [[ $(cat /tmp/tmp.txt) != "YES" && $(cat /tmp/tmp.txt) != "NO" ]]

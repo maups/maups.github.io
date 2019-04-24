@@ -22,12 +22,40 @@ td {
 
 <h3>Ementa</h3>
 <ul>
-	<li>Análise e Síntese.</li>
+  <li>Análise e Síntese.</li>
   <li>Análise léxica, sintática e semântica.</li>
   <li>Geração de código intermediário.</li>
   <li>Otimização de código intermediário.</li>
   <li>Geração e otimização de código objeto.</li>
 </ul>
 
+<h3>Trabalho 1 - Análise léxica</h3>
+<ul>
+  <li>Especificação do trabalho <a href="compiladores-trabalho1-v2.pdf" target=_blank>[v2]</a></li>
+  <li>Definicão da linguagem da Turma 01 (16:40) <a href="compiladores-linguagem-turma1-v3.pdf" target=_blank>[v3]</a></li>
+  <li>Definicão da linguagem da Turma 02 (18:30) <a href="compiladores-linguagem-turma2-v3.pdf" target=_blank>[v3]</a></li>
+  <li>Corretor <a href="pack.zip" target=_blank>[docker]</a></li>
+  <ul>
+    <li>Instruções de uso:</li>
+    <ol>
+      <li>Instale o docker na sua máquina (<a href="https://docs.docker.com/install/" target=_blank>https://docs.docker.com/install/</a>)</li>
+      <li>Baixe o <a href="pack.zip" target=_blank>corretor</a></li>
+      <li>No diretório onde o corretor foi baixado, execute os comandos a seguir</li>
+      <li>$ unzip pack.zip</li>
+      <li>$ cd pack</li>
+      <li>Copie o seu código para o diretório corrente usando o nome "test.cpp" caso tenha feito o trabalho em C ou C++, ou o nome "test.py" caso tenha feito o trabalho em Python2</li>
+      <li>$ sudo docker build -t compiladores .</li>
+      <li>Caso seja aluno da Turma 01 com imlpementação em C ou C++, teste sua imlpementação com o seguinte comando:</li>
+      <li>$ sudo docker run -t compiladores ./checker1 -cpp
+      <li>Caso seja aluno da Turma 01 com imlpementação em Python2, teste sua imlpementação com o seguinte comando:</li>
+      <li>$ sudo docker run -t compiladores ./checker1 -py
+      <li>Caso seja aluno da Turma 02 com imlpementação em C ou C++, teste sua imlpementação com o seguinte comando:</li>
+      <li>$ sudo docker run -t compiladores ./checker2 -cpp
+      <li>Caso seja aluno da Turma 02 com imlpementação em Python2, teste sua imlpementação com o seguinte comando:</li>
+      <li>$ sudo docker run -t compiladores ./checker2 -py
+    </ol>
+  </ul>
+</ul>
+	
 </body>
 </html>

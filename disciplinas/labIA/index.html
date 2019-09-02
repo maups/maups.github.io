@@ -48,6 +48,8 @@ td {
 		<li>$ unzip projeto1.zip</li>
 		<li>$ cd projeto1</li>
 		<li>$ sudo docker build -t projeto1 .</li>
+		<li>$ PATH1=/path/to/dataset/folder/</li>
+		<li>$ PATH2=/path/to/output/folder/</li>
 		<li>$ sudo docker run -v $PATH1/:/data:ro -v $PATH2/:/wdata projeto1 bash -c 'python3 test.py /data/base/teste/ /wdata/resultado.txt'</li>
 		<li>$ sudo docker run -v $PATH1/:/data:ro -v $PATH2/:/wdata projeto1 bash -c 'python3 train_and_test.py /data/base/treino/ /data/base/teste/ /wdata/resultado.txt'</li>
 	</ol>

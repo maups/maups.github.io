@@ -36,5 +36,21 @@ td {
 	<li>Parte 1 - Tipos de bolas <a href="data_part1.tar.bz2" target=_blank>[FILE]</a></li>
 </ul>
 
+<h3>Projeto #1 - Regressão logística utilizando a base de tipos de bolas</h3>
+<ul>
+	<li><b>Tarefa:</b> implementar o método de regressão logística treinado com gradient descent para classificar as imagens de teste da base; para tal, deve-se utilizar apenas NumPy e OpenCV.</li>
+	<li><b>Entrega:</b> enviar um e-mail para [mauriciops at ufba dot br] com o assunto "MATB16 - Projeto #1" contendo um único anexo chamado 'projeto1.zip'. Esse arquivo deve compactar um diretório chamado 'projeto1' contendo ao menos os seguintes arquivos: 'Dockerfile', 'questionario.pdf', 'requirements.txt', 'test.py', e 'train_and_test.py'. Não altere os arquivos 'Dockerfile' e 'requirements.txt'. O arquivo 'test.py', quando executado, deve carregar todas as imagens de teste e classificá-las utilizando um modelo pré-gerado em menos de 3 minutos. O arquivo 'train_and_test.py', quando executado, deve carregar todas as imagens de treino e criar um modelo de classificação; depois deve carregar todas as imagens de teste e classificá-las utilizando um modelo gerado; o tempo limite é de 60 minutos. O arquivo 'questionario.pdf' deve ser respondido a partir do <a href="https://docs.google.com/document/d/1CbAkSQVihcl0IgJxccjHko51K_HQpOaMZGFzy4s0DR4/edit?usp=sharing" target=_blank>modelo disponibilizado</a>. A base não deve ser colocada dentro do pacote a ser submetido.</li>
+	<li><b>Exemplo de submissão:</b> <a href="https://maups.github.io/disciplinas/labIA/projeto1.zip" target=_blank>projeto1.zip</a></li>
+	<li><b>Como executá-lo?</b></li>
+	<ol>
+		<li>$ wget https://maups.github.io/disciplinas/labIA/projeto1.zip</li>
+		<li>$ unzip projeto1.zip</li>
+		<li>$ cd projeto1</li>
+		<li>$ sudo docker build -t projeto1 .</li>
+		<li>$ sudo docker run -v $PATH1/:/data:ro -v $PATH2/:/wdata projeto1 bash -c 'python3 test.py /data/base/teste/ /wdata/resultado.txt'</li>
+		<li>$ sudo docker run -v $PATH1/:/data:ro -v $PATH2/:/wdata projeto1 bash -c 'python3 train_and_test.py /data/base/treino/ /data/base/teste/ /wdata/resultado.txt'</li>
+	</ol>
+</ul>
+
 </body>
 </html>
